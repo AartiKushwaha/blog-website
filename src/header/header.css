@@ -25,10 +25,10 @@ video {
 }
 .overlay h1 {
   /* background: #000 none repeat scroll 0 0; */
-  color: rgba(255, 255, 255, 0.77);
+  color: rgba(255, 255, 255, 0.9);
   /* font-family: 'Didact Gothic', sans-serif; */
   font-family: 'Poiret One', cursive;
-  font-size: 4.5rem;
+  font-size: 6.5rem;
   margin: 2rem 3rem 0;
   mix-blend-mode: overlay;
   padding: 5px 15px;
