@@ -1,0 +1,57 @@
+.top{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(113, 116, 115, 0.139);
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 500;
+    /* text-align: center; */
+    z-index: 1000;
+    color: white;
+}
+.topLeft, .topRight{
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.topCenter{
+    flex: 6;
+}
+.topImage{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.searchBar{
+    width: 140px;
+    display: flex;
+    height: 30px;
+    background-color: #ffffffa0;
+    margin-right: 10px;
+    border-radius: 15px;
+    align-items: center;
+    padding: 2px;
+    
+}
+.searchIcon{
+    color: rgba(0, 0, 0, 0.7);
+    margin-left: 10px;
+}
+.navBar{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* cursor: pointer; */
+}
+.listItem{
+    cursor: pointer;
+    margin: 20px;
+
+}

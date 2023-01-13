@@ -1,0 +1,47 @@
+.sidebar {
+  flex: 3;
+  margin: 15px;
+  padding-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  color: #ffffffa8;
+}
+.sidebarImage {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.sidebarTitle {
+  font-family: "Poiret One", cursive;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-top: 1px solid #ca7f24;
+  border-bottom: 1px solid #ca7f24;
+  color: #ca7f24;
+  margin-top: 10px;
+}
+.sidebarList {
+  font-family: "Didact Gothic", sans-serif;
+  list-style: none;
+}
+.sidebarListItem{
+    display: inline-block;
+    width: 50%;
+}
+.sidebarText {
+  font-family: "Didact Gothic", sans-serif;
+  text-align: justify;
+}
+.sidebarItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  margin-bottom: 10px;
+}
+.sidebarSocial {
+  margin-top: 6px;
+}
+.socialIcon {
+  margin-left: 10px;
+}
