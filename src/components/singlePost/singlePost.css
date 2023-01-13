@@ -1,0 +1,50 @@
+.singlePost{
+    flex: 9;
+    margin: 12px;
+    color: #ffffffa8;
+}
+.singlePostImg{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+.singlePostTitle{
+    font-family: "Poiret One", cursive;
+    font-size: 4rem;
+    color: #ca7f24;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between; 
+}
+.singlePostIcon{
+    font-size: 22px;
+    cursor: pointer;
+}
+.edit{
+    margin-right: 20px;
+}
+.singlePostInfo{
+    margin-top: 10px;
+    font-family: "Didact Gothic", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    font-style: italic;
+}
+.singlePostDate{
+    left: 0px;
+    font-style: italic;
+}
+.singlePostContent{
+    margin-top: 10px;
+    font-family: "Didact Gothic", sans-serif;
+    text-align: justify;
+    line-height: 30px;
+    font-size: 20px;
+}
+.singlePostContent::first-letter{
+    margin-left: 20px;
+    font-size: 40px;
+    font-weight: 600;
+}
