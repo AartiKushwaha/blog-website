@@ -1,0 +1,62 @@
+.login {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.loginForm {
+    width: 50%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Didact Gothic", sans-serif;
+}
+.loginRegisterButton {
+  position: absolute;
+  top: 80px;
+  right: 50px;
+  width: 150px;
+}
+.loginInput {
+  height: 33px;
+  margin: 12px 0;
+  font-size: 20px;
+  padding: 10px;
+  background-color: #3d3146;
+  border: none;
+  color: #ffffffa8;
+  font-size: 16px;
+  border-bottom: 2px solid #ca7f24;
+  border-radius: 24px;
+}
+.loginInput:focus {
+  outline: none;
+}
+.loginLabel {
+  margin: 12px 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ca7f24;
+}
+
+.loginButton, .loginRegisterButton {
+  height: 50px;
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  background-color: #ca7f24;
+  color: #ffffffa8;
+  border-radius: 24px;
+  cursor: pointer;
+}
+.loginButton:hover, .loginRegisterButton:hover {
+  background-color: #ffffffa8;
+  color: #ca7f24;
+}
+.loginTitle{
+  color: #ca7f24;
+  font-size: 50px;
+  font-family: "Poiret One", cursive;
+  font-weight: bold;
+}
