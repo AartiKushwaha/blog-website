@@ -1,57 +1,114 @@
-.top{
-    width: 100%;
-    height: 50px;
-    background-color: rgba(113, 116, 115, 0.139);
-    position: sticky;
-    top: 0;
-    display: flex;
-    align-items: center;
-    font-family: 'Didact Gothic', sans-serif;
-    font-weight: 500;
-    /* text-align: center; */
-    z-index: 1000;
-    color: white;
+.top {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(113, 116, 115, 0.139);
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 500;
+  /* text-align: center; */
+  z-index: 1000;
+  color: white;
 }
-.topLeft, .topRight{
-    flex: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.topLeft,
+.topRight {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.topCenter{
-    flex: 6;
+.topCenter {
+  flex: 6;
 }
-.topImage{
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    object-fit: cover;
+.topImage {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
 }
-.searchBar{
-    width: 140px;
-    display: flex;
-    height: 30px;
-    background-color: #ffffffa0;
-    margin-right: 10px;
-    border-radius: 15px;
-    align-items: center;
-    padding: 2px;
-    
+.searchBar {
+  width: 140px;
+  display: flex;
+  height: 30px;
+  background-color: #ffffffa0;
+  margin-right: 10px;
+  border-radius: 15px;
+  align-items: center;
+  padding: 2px;
 }
-.searchIcon{
-    color: rgba(0, 0, 0, 0.7);
-    margin-left: 10px;
+.searchIcon {
+  color: rgba(0, 0, 0, 0.7);
+  margin-left: 10px;
 }
-.navBar{
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    /* cursor: pointer; */
+.navBar {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* cursor: pointer; */
 }
-.listItem{
-    cursor: pointer;
-    margin: 20px;
+.listItem {
+  cursor: pointer;
+  margin: 20px;
+}
+.hamburger {
+  border: 0;
+  height: 36px;
+  width: 36px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #000000;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  display: none;
+}
+.hamburger:hover {
+  background-color: #2642af;
+}
 
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .topCenter ul {
+    display: none;
+  }
+  .topCenter ul{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 77px);
+    border-top: 1px solid black;
+  }
+  .topCenter li{
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    padding: 1.5rem 0;
+    color: rgb(255, 255, 255);
+  }
+  .topCenter li:hover {
+    background-color: #eee;
+    color: rgb(0, 0, 0);
+  }
+  .topCenter ul{
+    display: none;
+  }
+  .topCenter.expanded ul{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .corner{
+    margin-right: 71px;
+  }
 }
