@@ -3,7 +3,7 @@ import "./topbar.css";
 import { useState } from "react";
 
 export default function TopBar() {
-  const user = true;
+  const user = false;
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   return (
     <div>

@@ -60,3 +60,8 @@
   font-family: "Poiret One", cursive;
   font-weight: bold;
 }
+@media screen and (max-width: 792px){
+  .loginForm{
+      width: 70%;
+  }
+}
