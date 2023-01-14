@@ -4,11 +4,11 @@ import Single from "./pages/single/Single";
 import Write from "./pages/write/Write";
 import Settings from "./pages/settings/Settings";
 import Login from "./pages/login/Login";
-import Register from "./register/Register";
+import Register from "./pages/register/Register";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 
 function App() {
-  const user = false;
+  const user = true;
   return (
     <Router>
       <TopBar />

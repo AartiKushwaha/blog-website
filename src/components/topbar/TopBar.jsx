@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./topbar.css";
 
 export default function TopBar() {
-  const user = false;
+  const user = true;
   return (
     <div>
       <div className="top">
@@ -33,12 +33,15 @@ export default function TopBar() {
           </ul>
         </div>
         <div className="topRight">
+          <div className="searchBar">
+            <span className="material-symbols-outlined searchIcon">search</span>
+          </div>
           {user ? (
-            <img
+            <Link className="link" to="/settings"><img
               className="topImage"
               src="https://yt3.ggpht.com/yti/AJo0G0kt1B7Ml7UZ9EufDP0tcilCXfI3pgFKFDhOUj7cIg=s88-c-k-c0x00ffffff-no-rj-mo"
               alt="profilepic"
-            ></img>
+            ></img></Link>
           ) : (
             <ul className="navBar">
               <li className="listItem">
@@ -53,9 +56,6 @@ export default function TopBar() {
               </li>
             </ul>
           )}
-          <div className="searchBar">
-            <span className="material-symbols-outlined searchIcon">search</span>
-          </div>
         </div>
       </div>
     </div>

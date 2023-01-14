@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "./post.css"
 
 export default function Post() {
@@ -9,7 +10,7 @@ export default function Post() {
             <span className='postCat'>Anime</span>
             <span className='postCat'>Music</span>
         </div>
-        <span className='postTitle'>This is the title</span>
+        <span className='postTitle'><Link className="link" to="/post/:postId">This is the title</Link></span>
         <span className='postDate'>2 hours ago</span>
         <p className="postDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
