@@ -40,7 +40,6 @@ textarea {
   font-family: "Didact Gothic", sans-serif;
 }
 
-
 .writeFormIcon {
   width: 25px;
   height: 25px;
@@ -53,16 +52,35 @@ textarea {
   font-size: 20px;
   cursor: pointer;
 }
-.title{
-    font-family: "Poiret One", cursive;
-    font-size: 40px;
-    color: #ca7f24;
-    font-weight: 600;
+.title {
+  font-family: "Poiret One", cursive;
+  font-size: 40px;
+  color: #ca7f24;
+  font-weight: 600;
 }
-.writeImg{
-    margin-left: 150px;
-    border-radius: 15px;
-    width: 70vw;
-    height: 300px;
-    object-fit: cover;
+.writeImg {
+  margin-left: 150px;
+  border-radius: 15px;
+  width: 70vw;
+  height: 300px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 792px) {
+  .writeImg {
+    margin-left: 0;
+    width: 100%;
+  }
+  .writeFormGroup {
+    margin-left: 0;
+  }
+  .title {
+    font-size: 35px;
+  }
+  .writeSubmit {
+    top: 10px;
+    right: 2px;
+    font-size: 15px;
+    padding: 8px;
+  }
 }

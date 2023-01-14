@@ -49,3 +49,11 @@
     font-size: 40px;
     font-weight: 600;
 }
+@media screen and (max-width: 792px){
+    .singlePostTitle{
+        font-size: 2.5rem;
+    }
+    .singlePostImg{
+        height: 258px;
+    }
+}

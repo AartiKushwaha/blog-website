@@ -27,7 +27,7 @@ video {
   /* background: #000 none repeat scroll 0 0; */
   color: rgba(255, 255, 255, 0.9);
   /* font-family: 'Didact Gothic', sans-serif; */
-  font-family: 'Poiret One', cursive;
+  font-family: "Poiret One", cursive;
   font-size: 6.5rem;
   margin: 2rem 3rem 0;
   mix-blend-mode: overlay;
@@ -36,4 +36,17 @@ video {
   display: flex;
   /* justify-content: center; */
   align-items: center;
+}
+
+@media screen and (max-width: 670px) {
+  .overlay h1 {
+    margin-bottom: 283px;
+    font-size: 5.5rem;
+  }
+}
+@media screen and (max-width: 520px) {
+  .overlay h1 {
+    margin-bottom: 283px;
+    font-size: 3.5rem;
+  }
 }
