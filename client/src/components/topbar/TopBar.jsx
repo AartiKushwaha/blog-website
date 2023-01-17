@@ -1,14 +1,25 @@
 import { Link } from "react-router-dom";
 import "./topbar.css";
+import { useContext } from "react";
+import { Context } from "../../context/Context";
 import { useState } from "react";
 
 export default function TopBar() {
-  const user = true;
+  const { user, dispatch } = useContext(Context);
+  const PF = "http://localhost:5000/images/";
+
+  const handleLogout = () => {
+    dispatch({ type: "LOGOUT" });
+  };
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   return (
     <div>
       <div className="top">
-        <div className="topLeft"><Link className="link" to="/">LOGO</Link></div>
+        <div className="topLeft">
+          <Link className="link" to="/">
+            LOGO
+          </Link>
+        </div>
         <button
           className="hamburger"
           onClick={() => {
@@ -16,17 +27,17 @@ export default function TopBar() {
           }}
         >
           <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5"
-          viewBox="0 0 20 20"
-          fill="white"
-        >
-          <path
-            fillRule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-            clipRule="evenodd"
-          />
-        </svg>
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="white"
+          >
+            <path
+              fillRule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+              clipRule="evenodd"
+            />
+          </svg>
         </button>
         <div className={isNavExpanded ? "topCenter expanded" : "topCenter"}>
           <ul className="navBar">
@@ -50,20 +61,22 @@ export default function TopBar() {
                 CONTACT
               </Link>
             </li>
-            <li className="listItem">{user && "LOGOUT"}</li>
+            <li className="hidden">
+              {user ? (
+                <Link to="/settings">
+                  <img className="topImage" src={PF + user.profilePic} alt="" />
+                </Link>
+              ) : null}
+            </li>
+            <li className="listItem" onClick={handleLogout}>
+              {user && "LOGOUT"}
+            </li>
           </ul>
         </div>
         <div className="topRight corner">
-          <div className="searchBar">
-            <span className="material-symbols-outlined searchIcon">search</span>
-          </div>
           {user ? (
-            <Link className="link" to="/settings">
-              <img
-                className="topImage"
-                src="https://yt3.ggpht.com/yti/AJo0G0kt1B7Ml7UZ9EufDP0tcilCXfI3pgFKFDhOUj7cIg=s88-c-k-c0x00ffffff-no-rj-mo"
-                alt="profilepic"
-              ></img>
+            <Link to="/settings">
+              <img className="topImage" src={PF + user.profilePic} alt="" />
             </Link>
           ) : (
             <ul className="navBar signin">

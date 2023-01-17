@@ -14,10 +14,11 @@
 }
 .topLeft,
 .topRight {
-  flex: 3;
+  /* flex: 3; */
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 15px;
 }
 .topCenter {
   flex: 6;
@@ -80,6 +81,9 @@
   .topCenter ul {
     display: none;
   }
+  .corner img{
+    display: none;
+  }
   .topCenter ul{
     position: absolute;
     top: 50px;
@@ -110,5 +114,10 @@
   }
   .corner{
     margin-right: 71px;
+  }
+}
+@media screen and (min-width: 769px){
+  .hidden{
+    display: none;
   }
 }

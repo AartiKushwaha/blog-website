@@ -60,8 +60,23 @@
   font-family: "Poiret One", cursive;
   font-weight: bold;
 }
+
 @media screen and (max-width: 792px){
   .registerForm{
       width: 70%;
+  }
+  .registerButton, .registerLoginButton {
+    height: 42px;
+    padding: 0;
+  }
+  .registerTitle{
+    font-size: 38px;
+  }
+  .registerInput{
+    height: 26px;
+    margin: 0;
+  }
+  .register{
+    height: 80vh;
   }
 }

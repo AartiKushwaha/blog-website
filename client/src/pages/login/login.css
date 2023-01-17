@@ -54,6 +54,10 @@
   background-color: #ffffffa8;
   color: #ca7f24;
 }
+
+.loginButton:disabled{
+  cursor: not-allowed;
+}
 .loginTitle{
   color: #ca7f24;
   font-size: 50px;
@@ -63,5 +67,19 @@
 @media screen and (max-width: 792px){
   .loginForm{
       width: 70%;
+  }
+  .loginButton, .loginRegisterButton {
+    height: 42px;
+    padding: 0;
+  }
+  .loginTitle{
+    font-size: 38px;
+  }
+  .loginInput{
+    height: 26px;
+    margin: 0;
+  }
+  .login{
+    height: 76vh;
   }
 }
