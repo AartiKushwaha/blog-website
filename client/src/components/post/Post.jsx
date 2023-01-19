@@ -8,9 +8,9 @@ export default function Post({ post }) {
       {post.photo && <img className="postImg" src={PF + post.photo} alt="" />}
       <div className="postInfo">
         <div className="postCats">
-          {post.categories.map((c) => (
+          {Array.isArray(post.categories)?(post.categories.map((c) => (
             <span className="postCat">{c}</span>
-          ))}
+          ))):[]}
         </div>
         <Link to={`/post/${post._id}`} className="link">
           <span className="postTitle">{post.title}</span>
