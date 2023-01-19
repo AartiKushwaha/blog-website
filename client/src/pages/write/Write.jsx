@@ -52,7 +52,6 @@ export default function Write() {
             type="text"
             placeholder="Title"
             className="writeInput title"
-            autoFocus={true}
             onChange={e=>setTitle(e.target.value)}
           />
         </div>

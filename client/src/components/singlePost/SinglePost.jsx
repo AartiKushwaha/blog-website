@@ -56,7 +56,7 @@ export default function SinglePost() {
             type="text"
             value={title}
             className="singlePostTitleInput"
-            autoFocus
+            
             onChange={(e) => setTitle(e.target.value)}
           />
         ) : (
